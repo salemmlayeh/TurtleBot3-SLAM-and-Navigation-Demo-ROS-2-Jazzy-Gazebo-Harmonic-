@@ -1,0 +1,10 @@
+# Waypoints are flat triples: x, y, yaw (metres, metres, radians) in the "map" frame.
+# These values are PLACEHOLDERS: replace them with free-space points from YOUR saved map.
+# Tip: in RViz2, use "Publish Point" and run `ros2 topic echo /clicked_point` to read coordinates.
+# Keep the decimal points (0.0, not 0): ROS needs a double array here.
+waypoint_navigator:
+  ros__parameters:
+    frame_id: map
+    waypoints: [0.5, 0.0, 0.0,
+                0.5, 0.5, 1.57,
+                0.0, 0.5, 3.14]
